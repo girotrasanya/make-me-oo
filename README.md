@@ -1,3 +1,22 @@
+Problems in Shivam's OOP Solution:
+1. Encapsulation is not present as data(i.e coordinates of points) and the behavior
+(i.e finding distance and direction between origin point and destination point) are not 
+binded together.
+2. Class Point has getter and setter functions whose only task is to set and get the value 
+of x and y coordinates of points.
+
+Changes made:
+1. Binding of data and behavior in class Point- deleted class DistanceAndDirectionCalculator 
+as it had behaviors(methods) that has already been included in class Point.
+2. Removal of getter and setter functions.
+
+Further Thoughts:
+1. I wanted to keep the class DistanceAndDirectionCalculator with the methods distance
+and direction, and keep the data inside it in the form of class Point
+(i.e class Point inside class DistanceAndDirectionCalculator) so that I can use this class
+to find distance and direction between two lines as well!! Is it a good option?
+
+Given Task:
 So Shivam had just learned about OOP. He had written a program before that did two things,
 - Find distance between two points
 - Find direction (angle) between two points in Radians.
